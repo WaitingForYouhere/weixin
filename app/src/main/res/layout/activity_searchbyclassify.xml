@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_searchbyclassify"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#555555"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/back1"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/back"
+            android:layout_alignParentLeft="true"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                >
+                <ImageButton
+                    android:id="@+id/searchby_input1"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/search"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+
+                <EditText
+                    android:id="@+id/classify"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:hint="搜索"
+                    android:background="@null"
+                    android:lines="@null"
+                    android:textSize="15sp"
+                    android:layout_height="match_parent" />
+
+
+            </LinearLayout>
+            <TextView
+                android:background="@android:color/holo_green_light"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <!--搜索朋友圈显示-->
+    <LinearLayout
+        android:visibility="gone"
+        android:orientation="horizontal"
+        android:id="@+id/friend_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/weekly_selected"
+            android:text="一周朋友圈精选"
+            android:layout_margin="20dp"
+            android:padding="5dp"
+            android:background="@drawable/shape"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+        <Button
+            android:id="@+id/shared_music"
+            android:text="朋友分享的音乐"
+            android:layout_marginTop="20dp"
+            android:padding="5dp"
+            android:background="@drawable/shape"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+    </LinearLayout>    <!--搜索朋友圈显示-->
+    <LinearLayout
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:id="@+id/article_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="精选文章"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/my_reading"
+            android:text="我的精选"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:padding="5dp"
+            android:background="@drawable/shape"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

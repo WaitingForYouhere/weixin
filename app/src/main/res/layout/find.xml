@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+<LinearLayout
+	android:id="@+id/friend_neighbor"
+	android:layout_width="match_parent"
+	android:layout_height="60dp">
+	<ImageView
+		android:layout_marginLeft="20dp"
+		android:layout_gravity="center_vertical"
+		android:background="@drawable/friendneighbor"
+		android:layout_width="30dp"
+		android:layout_height="30dp" />
+	<TextView
+		android:layout_marginLeft="20dp"
+		android:layout_gravity="center_vertical"
+		android:layout_width="0dp"
+		android:text="朋友圈"
+		android:textSize="20sp"
+		android:layout_weight="1"
+		android:layout_height="wrap_content" />
+	<RelativeLayout
+		android:layout_width="0dp"
+		android:layout_weight="3"
+		android:layout_height="match_parent">
+		<ImageView
+			android:background="@drawable/king"
+			android:layout_marginRight="20dp"
+			android:layout_centerVertical="true"
+			android:layout_alignParentRight="true"
+			android:id="@+id/last_icon"
+			android:layout_width="40dp"
+			android:layout_height="40dp" />
+		<ImageView
+			android:layout_marginTop="10dp"
+			android:background="@drawable/tab_unread_bg"
+			android:layout_marginRight="20dp"
+			android:layout_alignParentRight="true"
+			android:id="@+id/neight_redpoint"
+			android:layout_width="15dp"
+			android:layout_height="15dp" />
+	</RelativeLayout>
+</LinearLayout>
+	<TextView
+		android:background="#dddddd"
+		android:layout_width="match_parent"
+		android:layout_height="20dp" />
+	<LinearLayout
+		android:paddingLeft="20dp"
+		android:paddingRight="20dp"
+		android:orientation="vertical"
+		android:id="@+id/hava_a_scan"
+		android:layout_width="match_parent"
+		android:layout_height="60dp">
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+			<ImageView
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/scan1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+				android:id="@+id/imageView4" />
+
+			<TextView
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="0dp"
+                android:text="扫一扫"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+				 />
+		</LinearLayout>
+	<TextView
+		android:background="#aaaaaa"
+		android:layout_width="match_parent"
+		android:layout_height="2dp" />
+
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/have_a_shake"
+		android:layout_width="match_parent"
+		android:layout_height="60dp">
+		<ImageView
+			android:layout_marginLeft="20dp"
+			android:layout_gravity="center_vertical"
+			android:background="@drawable/shake"
+			android:layout_width="30dp"
+			android:layout_height="30dp" />
+		<TextView
+			android:layout_marginLeft="20dp"
+			android:layout_gravity="center_vertical"
+			android:layout_width="0dp"
+			android:text="摇一摇"
+			android:textSize="20sp"
+			android:layout_weight="1"
+			android:layout_height="wrap_content" />
+	</LinearLayout>
+	<TextView
+		android:background="#dddddd"
+		android:layout_width="match_parent"
+		android:layout_height="20dp" />
+	<LinearLayout
+		android:paddingLeft="20dp"
+		android:paddingRight="20dp"
+		android:orientation="vertical"
+		android:id="@+id/neight_man"
+		android:layout_width="match_parent"
+		android:layout_height="60dp">
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+			<ImageView
+				android:layout_gravity="center_vertical"
+				android:background="@drawable/man_of_neibor"
+				android:layout_width="30dp"
+				android:layout_height="30dp" />
+
+			<TextView
+				android:layout_marginLeft="20dp"
+				android:layout_gravity="center_vertical"
+				android:layout_width="0dp"
+				android:text="附近的人"
+				android:textSize="20sp"
+				android:layout_weight="1"
+				android:layout_height="wrap_content"
+				 />
+		</LinearLayout>
+		<TextView
+			android:background="#aaaaaa"
+			android:layout_width="match_parent"
+			android:layout_height="2dp" />
+
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/bottle"
+		android:layout_width="match_parent"
+		android:layout_height="60dp">
+		<ImageView
+			android:layout_marginLeft="20dp"
+			android:layout_gravity="center_vertical"
+			android:background="@drawable/bottle"
+			android:layout_width="30dp"
+			android:layout_height="30dp" />
+		<TextView
+			android:layout_marginLeft="20dp"
+			android:layout_gravity="center_vertical"
+			android:layout_width="0dp"
+			android:text="漂流瓶"
+			android:textSize="20sp"
+			android:layout_weight="1"
+			android:layout_height="wrap_content" />
+	</LinearLayout>
+	<TextView
+		android:background="#dddddd"
+		android:layout_width="match_parent"
+		android:layout_height="20dp" />
+	<LinearLayout
+		android:orientation="vertical"
+		android:paddingLeft="20dp"
+		android:paddingRight="20dp"
+		android:id="@+id/shopping"
+		android:layout_width="match_parent"
+		android:layout_height="60dp">
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+			<ImageView
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/shopping"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+				android:id="@+id/imageView5" />
+
+			<TextView
+			android:layout_marginLeft="20dp"
+			android:layout_gravity="center_vertical"
+			android:layout_width="0dp"
+			android:text="购物"
+			android:textSize="20sp"
+			android:layout_weight="1"
+			android:layout_height="wrap_content" />
+	</LinearLayout>
+		<TextView
+			android:background="#aaaaaa"
+			android:layout_width="match_parent"
+			android:layout_height="2dp" />
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/game"
+		android:layout_width="match_parent"
+		android:layout_height="60dp">
+
+		<ImageView
+			android:layout_marginLeft="20dp"
+			android:layout_gravity="center_vertical"
+			android:background="@drawable/game"
+			android:layout_width="30dp"
+			android:layout_height="30dp"
+			android:id="@+id/imageView6" />
+
+		<TextView
+			android:layout_marginLeft="20dp"
+			android:layout_gravity="center_vertical"
+			android:layout_width="0dp"
+			android:text="游戏"
+			android:textSize="20sp"
+			android:layout_weight="1"
+			android:layout_height="wrap_content" />
+	</LinearLayout>
+
+		</LinearLayout>
+</ScrollView>
+</LinearLayout>

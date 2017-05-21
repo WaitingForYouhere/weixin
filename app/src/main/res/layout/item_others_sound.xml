@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:padding="3dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/others_icon"
+            android:padding="7dp"
+            android:src="@drawable/icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+        <TextView
+            android:id="@+id/others_text"
+            android:layout_gravity="center"
+            android:textSize="17sp"
+            android:padding="13dp"
+            android:minHeight="50dp"
+            android:gravity="center"
+            android:maxWidth="300dp"
+            android:textColor="#000000"
+            android:background="@drawable/text_background_others"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:id="@+id/others_sound_layout"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:background="@drawable/sound_background_others"
+                android:id="@+id/others_sound"
+                android:layout_width="120dp"
+                android:layout_height="60dp" />
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:id="@+id/others_sound_length"
+                android:text="5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

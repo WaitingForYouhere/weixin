@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <item
+        android:icon="@drawable/search"
+        android:showAsAction="always|withText"
+        android:id="@+id/to_search"
+        android:title="搜索"/>
+    <item
+        android:icon="@drawable/plus"
+        android:showAsAction="always|withText"
+        android:id="@+id/to_plus"
+        android:title="加"/>
+    <item
+        android:icon="@drawable/newgroup"
+        android:id="@+id/to_build_group"
+        android:showAsAction="withText"
+        android:title="发起群聊"/>
+    <item
+        android:icon="@drawable/addfriend"
+        android:id="@+id/to_add_friend"
+        android:showAsAction="withText"
+        android:title="添加朋友"/>
+    <item
+        android:icon="@drawable/scan"
+        android:id="@+id/to_scan"
+        android:showAsAction="withText"
+        android:title="扫一扫"/>
+    <item
+        android:icon="@drawable/getmoney"
+        android:id="@+id/to_get_pay"
+        android:showAsAction="withText"
+        android:title="收付款"/>
+    <item
+        android:icon="@drawable/help"
+        android:id="@+id/to_help"
+        android:showAsAction="withText"
+        android:title="帮助与反馈"/>
+</menu>

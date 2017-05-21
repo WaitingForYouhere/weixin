@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="11dp"
+        android:background="#555555"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/title"
+            android:text="微信"
+            android:layout_centerVertical="true"
+            android:textSize="19sp"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageButton
+            android:id="@+id/seatch"
+            android:background="@drawable/search"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="60dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <ImageButton
+            android:id="@+id/add"
+            android:background="@drawable/plus"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+    </RelativeLayout>
+
+    <FrameLayout
+
+        android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+    <RadioGroup
+        android:id="@+id/tab_menu"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="54dp">
+
+        <RadioButton
+            android:id="@+id/bt_weixin"
+            style="@style/Tabstyle"
+            android:text="微信"
+            android:checked="true"
+            android:drawableTop="@drawable/tab_selector_weixing"
+/>
+
+        <RadioButton
+            android:id="@+id/bt_tongxunlu"
+            style="@style/Tabstyle"
+            android:text="通讯录"
+            android:drawableTop="@drawable/tab_selector_tongxunlu"
+ />
+        <RadioButton
+            android:id="@+id/bt_faxian"
+            style="@style/Tabstyle"
+            android:text="发现"
+            android:drawableTop="@drawable/tab_selector_faxian"
+ />
+        <RadioButton
+            android:id="@+id/bt_wo"
+            style="@style/Tabstyle"
+            android:text="我"
+            android:drawableTop="@drawable/tab_selector_wo"
+ />
+    </RadioGroup>
+
+</LinearLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_share_to_friend"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="#eeeeee"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/my_thought_now"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:minLines="4"
+            android:maxLines="4"
+            android:background="@null"
+            android:hint="这一刻的想法……"
+            />
+        <com.yzs.imageshowpickerview.ImageShowPickerView
+            android:id="@+id/it_picker_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.yzs.imageshowpickerview.ImageShowPickerView>
+
+        <LinearLayout
+            android:padding="10dp"
+            android:id="@+id/my_location_layout_sharepage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/gray_location_16"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+
+            <TextView
+                android:id="@+id/my_location_sharepage"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="0dp"
+                android:text="所在位置"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:background="#ffffff"
+        android:padding="10dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/who_can_see_sharepage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/gray_location_16"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:text="谁可以见"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView" />
+
+        <TextView
+            android:id="@+id/status_wocansee"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical|right"
+            android:layout_width="wrap_content"
+            android:text="公开"
+            android:textColor="#999999"
+            android:textSize="14sp"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_marginTop="1dp"
+        android:background="#ffffff"
+        android:id="@+id/remind_who_sharepage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/gray_location_16"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:text="提醒谁看"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+    <ImageButton
+        android:background="@drawable/zone_gray"
+        android:id="@+id/share_star"
+        android:layout_margin="10dp"
+        android:layout_width="20dp"
+        android:layout_height="20dp" />
+</LinearLayout>

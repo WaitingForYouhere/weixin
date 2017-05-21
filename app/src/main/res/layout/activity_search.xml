@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_search"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.lenovo.weixing.Activity.SearchActivity">
+ <!--头部搜索框-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#555555"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+             android:layout_marginRight="10dp"
+            android:background="@drawable/back"
+            android:layout_alignParentLeft="true"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                >
+            <ImageButton
+            android:id="@+id/searchby_input"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/search"
+            android:layout_alignParentRight="true"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+            <EditText
+                android:id="@+id/search_input"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:hint="搜索"
+                android:background="@null"
+                android:lines="@null"
+                android:textSize="15sp"
+                android:layout_height="match_parent" />
+            <ImageButton
+                android:id="@+id/say_or_delete"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/mic"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+            </LinearLayout>
+            <TextView
+                android:background="@android:color/holo_green_light"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            </LinearLayout> 
+    </LinearLayout>
+ <!--搜索指定内容-->
+        <LinearLayout
+            android:visibility="visible"
+            android:id="@+id/search_content"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:paddingTop="30dp"
+                android:text="搜索指定内容"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/bt_1"
+                    android:background="@null"
+                    android:text="朋友圈"
+                    android:textColor="@android:color/holo_green_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:background="#dddddd"
+                    android:layout_width="1dp"
+                    android:layout_height="18dp" />
+                <Button
+                    android:id="@+id/bt_2"
+                    android:background="@null"
+                    android:text="文章"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:textColor="@android:color/holo_green_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:background="#dddddd"
+                    android:layout_width="1dp"
+                    android:layout_height="20dp" />
+                <Button
+                    android:id="@+id/bt_3"
+                    android:background="@null"
+                    android:text="公众号"
+                    android:textColor="@android:color/holo_green_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/bt_4"
+                    android:background="@null"
+                    android:text="小说"
+                    android:textColor="@android:color/holo_green_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:background="#dddddd"
+                    android:layout_width="1dp"
+                    android:layout_height="18dp" />
+
+                <Button
+                    android:id="@+id/bt_5"
+                    android:background="@null"
+                    android:text="音乐"
+                    android:textColor="@android:color/holo_green_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:background="#dddddd"
+                    android:layout_width="1dp"
+                    android:layout_height="20dp" />
+                <Button
+                    android:id="@+id/bt_6"
+                    android:background="@null"
+                    android:text="表情"
+                    android:textColor="@android:color/holo_green_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    <!--群聊-->
+    <LinearLayout
+        android:id="@+id/search_group_layout"
+        android:visibility="gone"
+        android:background="#ffffff"
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:text="群聊"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ListView
+                android:id="@+id/chat_together_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></ListView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#999999"/>
+
+            <Button
+                android:id="@+id/search_more_group"
+                android:background="#ffffff"
+                android:text="搜索更多群聊"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+            <TextView
+                android:background="#eeeeee"
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/search_chat_layout"
+        android:background="#ffffff"
+        android:layout_marginTop="10dp"
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:text="聊天记录"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#999999"/>
+            <ListView
+                android:id="@+id/find_chat_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></ListView>
+
+            <Button
+                android:id="@+id/search_chat"
+                android:background="#ffffff"
+                android:text="更多聊天记录"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+            <TextView
+                android:background="#eeeeee"
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <!--搜一搜-->
+    <LinearLayout
+        android:id="@+id/search_else"
+        android:layout_margin="5dp"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/image_icon"
+            android:background="#006400"
+            android:padding="15dp"
+            android:src="@drawable/search"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+        <LinearLayout
+            android:layout_toRightOf="@+id/image_icon"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="60dp">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                android:textSize="20sp"
+                android:text="搜一搜"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+             <TextView
+                 android:layout_marginLeft="20dp"
+                android:id="@+id/input_text"
+                android:textSize="20sp"
+                android:text="搜"
+                 android:textColor="@android:color/holo_green_light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/latest"
+                android:textSize="13sp"
+                android:layout_marginTop="5dp"
+                android:text="文章、朋友圈、小说、音乐和表情等"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

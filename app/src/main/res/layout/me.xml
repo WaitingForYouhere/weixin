@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+<ScrollView
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+	<TextView
+		android:background="#dddddd"
+		android:layout_width="match_parent"
+		android:layout_height="20dp" />
+	<LinearLayout
+		android:id="@+id/my_setting_layout"
+		android:padding="10dp"
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<ImageView
+			android:layout_margin="5dp"
+			android:src="@drawable/my_head_icon"
+			android:padding="10dp"
+			android:layout_marginLeft="10dp"
+			android:id="@+id/my_head_icon"
+			android:layout_width="80dp"
+			android:layout_height="80dp" />
+
+		<LinearLayout
+			android:layout_gravity="center_vertical"
+			android:orientation="vertical"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:layout_height="wrap_content">
+			<TextView
+				android:id="@+id/my_nickname"
+				android:text="无量诚意"
+				android:textSize="18sp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+			<TextView
+				android:id="@+id/my_id"
+				android:text="微信号：hc740447122"
+				android:textSize="14sp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+
+		</LinearLayout>
+		<ImageButton
+			android:layout_gravity="center_vertical"
+			android:layout_marginRight="10dp"
+			android:background="@drawable/qr"
+			android:id="@+id/my_QR_code"
+			android:layout_width="30dp"
+			android:layout_height="30dp" />
+	</LinearLayout>
+	<TextView
+		android:background="#dddddd"
+		android:layout_width="match_parent"
+		android:layout_height="20dp" />
+	<LinearLayout
+		android:paddingLeft="20dp"
+		android:paddingRight="20dp"
+		android:orientation="vertical"
+		android:id="@+id/album"
+		android:layout_width="match_parent"
+		android:layout_height="60dp">
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+			<ImageView
+				android:layout_gravity="center_vertical"
+				android:background="@drawable/bluephoto"
+				android:layout_width="30dp"
+				android:layout_height="30dp" />
+
+			<TextView
+				android:layout_marginLeft="20dp"
+				android:layout_gravity="center_vertical"
+				android:layout_width="0dp"
+				android:text="相册"
+				android:textSize="20sp"
+				android:layout_weight="1"
+				android:layout_height="wrap_content"
+				/>
+		</LinearLayout>
+		<TextView
+			android:background="#aaaaaa"
+			android:layout_width="match_parent"
+			android:layout_height="2dp" />
+
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/collection"
+		android:layout_width="match_parent"
+		android:layout_height="60dp">
+
+		<ImageView
+			android:layout_marginLeft="20dp"
+			android:layout_gravity="center_vertical"
+			android:background="@drawable/collection"
+			android:layout_width="30dp"
+			android:layout_height="30dp"
+			 />
+
+		<TextView
+			android:layout_marginLeft="20dp"
+			android:layout_gravity="center_vertical"
+			android:layout_width="0dp"
+			android:text="收藏"
+			android:textSize="20sp"
+			android:layout_weight="1"
+			android:layout_height="wrap_content" />
+	</LinearLayout>
+
+	<TextView
+		android:background="#dddddd"
+		android:layout_width="match_parent"
+		android:layout_height="20dp" />
+	<LinearLayout
+		android:paddingLeft="20dp"
+		android:paddingRight="20dp"
+		android:orientation="vertical"
+		android:id="@+id/wallet"
+		android:layout_width="match_parent"
+		android:layout_height="60dp">
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+			<ImageView
+				android:layout_gravity="center_vertical"
+				android:background="@drawable/wallet"
+				android:layout_marginLeft="5dp"
+				android:layout_width="25dp"
+				android:layout_height="20dp" />
+
+			<TextView
+				android:layout_marginLeft="20dp"
+				android:layout_gravity="center_vertical"
+				android:layout_width="0dp"
+				android:text="钱包"
+				android:textSize="20sp"
+				android:layout_weight="1"
+				android:layout_height="wrap_content"
+				/>
+		</LinearLayout>
+		<TextView
+			android:background="#aaaaaa"
+			android:layout_width="match_parent"
+			android:layout_height="2dp" />
+
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/card_bag"
+		android:layout_width="match_parent"
+		android:layout_height="60dp">
+
+		<ImageView
+			android:layout_marginLeft="20dp"
+			android:layout_gravity="center_vertical"
+			android:background="@drawable/cardbag"
+			android:layout_width="30dp"
+			android:layout_height="30dp"
+			 />
+
+		<TextView
+			android:layout_marginLeft="20dp"
+			android:layout_gravity="center_vertical"
+			android:layout_width="0dp"
+			android:text="卡包"
+			android:textSize="20sp"
+			android:layout_weight="1"
+			android:layout_height="wrap_content" />
+	</LinearLayout>
+
+	<TextView
+		android:background="#dddddd"
+		android:layout_width="match_parent"
+		android:layout_height="20dp" />
+	<LinearLayout
+		android:paddingLeft="20dp"
+		android:paddingRight="20dp"
+		android:orientation="vertical"
+		android:id="@+id/expression"
+		android:layout_width="match_parent"
+		android:layout_height="60dp">
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+			<ImageView
+				android:layout_gravity="center_vertical"
+				android:background="@drawable/expression"
+				android:layout_width="30dp"
+				android:layout_height="30dp" />
+
+			<TextView
+				android:layout_marginLeft="20dp"
+				android:layout_gravity="center_vertical"
+				android:layout_width="0dp"
+				android:text="表情"
+				android:textSize="20sp"
+				android:layout_weight="1"
+				android:layout_height="wrap_content"
+				 />
+		</LinearLayout>
+	</LinearLayout>	<TextView
+		android:background="#dddddd"
+		android:layout_width="match_parent"
+		android:layout_height="20dp" />
+
+	<LinearLayout
+		android:paddingLeft="20dp"
+		android:paddingRight="20dp"
+		android:orientation="vertical"
+		android:id="@+id/setting"
+		android:layout_width="match_parent"
+		android:layout_height="60dp">
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+			<ImageView
+				android:layout_gravity="center_vertical"
+				android:background="@drawable/bluesetting"
+				android:layout_width="30dp"
+				android:layout_height="30dp"
+				/>
+
+			<TextView
+				android:layout_marginLeft="20dp"
+				android:layout_gravity="center_vertical"
+				android:layout_width="0dp"
+				android:text="设置"
+				android:textSize="20sp"
+				android:layout_weight="1"
+				android:layout_height="wrap_content"
+				/>
+		</LinearLayout>
+
+	</LinearLayout>
+	</LinearLayout>
+	</ScrollView>
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_moments"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.lenovo.weixing.Activity.MomentsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="270dp">
+        <ImageButton
+            android:id="@+id/moments_head_image"
+            android:background="@drawable/moments_head_image"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            />
+        <TextView
+            android:id="@+id/my_nickname_inMoment"
+            android:text="无量诚意"
+            android:layout_marginRight="110dp"
+            android:textColor="@color/colorWhite"
+            android:layout_marginTop="210dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageButton
+            android:id="@+id/my_icon_inMoment"
+            android:background="@drawable/king"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+    </RelativeLayout>
+<ListView
+    android:id="@+id/list_moment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"></ListView>
+</LinearLayout>

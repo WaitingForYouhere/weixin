@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_who_can_see"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.lenovo.weixing.Activity.WhoCanSeeActivity">
+<RadioGroup
+    android:id="@+id/radio_group_wocansee"
+    android:divider="#cccccc"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RadioButton
+        android:text="公开"
+        android:textSize="18sp"
+        android:shadowColor="@color/colorGreen"
+        android:checked="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioButton1">
+    </RadioButton>
+
+    <RadioButton
+        android:textSize="18sp"
+        android:text="私密"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioButton2" />
+
+    <RadioButton
+        android:textSize="18sp"
+        android:text="部分可见"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioButton3" />
+
+    <RadioButton
+        android:textSize="18sp"
+        android:text="不给谁看"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioButton4" />
+</RadioGroup>
+</LinearLayout>
